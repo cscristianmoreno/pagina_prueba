@@ -10,9 +10,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 75px;
+    margin-top: 30px;
     width: 90%;
-    margin-bottom: 25px;
 }
 
 .class_objectives_icon {

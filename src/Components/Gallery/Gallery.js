@@ -20,7 +20,7 @@ const Gallery = () => {
             <br/>
             <br/>
 
-            <span className="class_container_subtitle">Somos una entidad sin fines de lucro nacida de una realidad frecuentemente ignorada y desestimada. Somos personas con Tartamudez, Padres y Fonoaudiólogos de la Provincia de Salta, Argentina, que buscan visibilizar la Tartamudez y dar voz a las personas que viven con ella día a día.</span>
+            <span className="class_container_subtitle">Informamos a la sociedad sobre Tartamudez y sus características reales, capacitamos a profesionales fonoaudiólogos en detección y tratamiento con bases científicas; brindamos orientación a psicólogos, psicopedagogos, médicos y demás personal del área de  Salud y Educación, en la  detección,  entendimiento y contención adecuada; brindamos asesoramiento a las personas que tartamudean y a sus familias; y trabajamos para brindar acceso a herramientas que aumenten la confianza, autoestima, perdiendo el miedo, la vergüenza, inseguridad y el estigma de expresarse, iniciando un camino de aceptación.</span>
 
             <br/>
             <br/>
