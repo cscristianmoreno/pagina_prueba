@@ -41,7 +41,7 @@ const Members = () => {
                 <div className="class_members_image">
                     <img src={user_4}/>
                     
-                    <span className="class_members_name">CAROLINA NUÑOZ</span>
+                    <span className="class_members_name">CARINA MUÑOZ</span>
                     <span className="class_members_role"><i className="fas fa-headset"/>&nbsp;Vocal 1</span>
                     <br/>
                     <span className="class_members_description">Estudiante</span>
