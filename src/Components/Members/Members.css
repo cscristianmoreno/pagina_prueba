@@ -1,0 +1,74 @@
+.class_members_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(248, 248, 248);
+}
+
+.class_members_title {
+    font-family: "Monserrat", sans-serif;
+    font-weight: bolder;
+    color: #494848;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.class_members_image_container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.class_members_image {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    width: 250px;
+    height: 300px;
+    font-family: "Monserrat", sans-serif;
+    font-size: 14px;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    box-shadow: 10px 10px 1px rgba(0, 0, 0, 5%);
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.class_members_image:hover {
+    transform: scale(1.05);
+}
+
+.class_members_image img {
+    width: 125px;   
+    height: 125px;
+    border-radius: 100%;
+    padding: 5px;
+    background-color: #ffba3b;
+}
+
+.class_members_name {
+    font-weight: bolder;
+    color: #494949;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.class_members_role {
+    color: #977df5;
+    font-weight: bolder;
+}
+
+.class_members_description {
+    color: #525252;
+    font-style: italic;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    text-align: center;
+}

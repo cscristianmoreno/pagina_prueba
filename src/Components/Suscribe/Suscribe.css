@@ -1,0 +1,40 @@
+.class_suscribe_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    font-family: "Monserrat", sans-serif;
+}
+
+.class_suscribe_title {
+    font-family: "Monserrat", sans-serif;
+    font-weight: bolder;
+    color: #555454;
+    margin-top: 30px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.class_suscribe_form  {
+    display: flex;
+    width: 500px;
+    margin-bottom: 50px;
+}
+
+.class_suscribe_form input, .class_suscribe_form span, .class_suscribe_form button {
+    border-radius: 0 !important;
+}
+
+.class_suscribe_form span {
+    color: gray;
+}
+
+.class_suscribe_form button {
+    font-weight: 500 !important;
+    font-family: "Monserrat", sans-serif;
+}
+
+.class_suscribe_form input:focus {
+    border: 0px !important;
+}

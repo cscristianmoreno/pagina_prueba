@@ -1,0 +1,33 @@
+.class_announcement_container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #2f3472;
+}
+
+.class_announcement_title {
+    display: flex;
+    align-items: center;
+    font-family: "Monserrat", sans-serif;
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+    padding: 30px;
+}
+
+.class_announcement_title svg {
+    width: 60px;
+    height: 60px;
+    padding: 5px;
+    border-radius: 100%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #7232b3;
+}
+
+.class_announcement_title svg path {
+    fill: #7232b3;
+}
