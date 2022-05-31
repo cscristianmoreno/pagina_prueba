@@ -18,8 +18,8 @@ const App = () => {
     return(
         <HashRouter>
             <Routes>
-                <Route path={process.env.PUBLIC_URL + "/"} element={<Home/>}/>
-                <Route path={process.env.PUBLIC_URL + "/acerca_de_la_tartamudez"} element={<Stuttering/>}/>
+                <Route path="/" element={<Home/>}/>
+                <Route path="acerca_de_la_tartamudez" element={<Stuttering/>}/>
             </Routes>
         </HashRouter>
     );
