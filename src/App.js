@@ -1,4 +1,4 @@
-import { HashRoute, Router, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 
 import "./App.css";
 import Menu from "./Components/Menu/Menu.js";
@@ -11,9 +11,21 @@ import Objectives from "./Components/Objectives/Objectives.js";
 import Members from "./Components/Members/Members.js";
 import Announcement from "./Components/Announcement/Announcement.js";
 import Suscribe from "./Components/Suscribe/Suscribe.js";
+import Stammering from "./Components/Information/Stammering.js";
 
 
 const App = () => {
+    return(
+        <HashRouter>
+            <Routes>
+                <Route path={process.env.PUBLIC_URL + "/"} element={<Home/>}/>
+                <Route path={process.env.PUBLIC_URL + "/acerca_de_la_tartamudez"} element={<Stuttering/>}/>
+            </Routes>
+        </HashRouter>
+    );
+}
+
+const Home = () => {
     return(
         <>
             <Menu/>
@@ -23,11 +35,20 @@ const App = () => {
             <Objectives/>
             <Members/>
             <Suscribe/>
-            <Announcement/>
-            {/* <Products/> */}
+            {/* <Announcement/> */}
             <Footer/>
         </>
-    );
+    )
+}
+
+const Stuttering = () => {
+    return (
+        <>
+            <Menu/>
+            <Stammering/>
+            <Footer/>
+        </>
+    )
 }
 
 export default App;

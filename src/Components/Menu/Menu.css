@@ -17,7 +17,7 @@
 }
 
 .class_menu_title {
-    color: #2b2b2b;
+    color: gray;
     font-weight: 500;
     font-style: italic;
     font-weight: bolder;
@@ -51,8 +51,13 @@
     transition: 0.25s;
 }
 
+.class_menu_container a, .class_menu_responsive a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .class_menu_items li:hover {
-    color: orange;
+    color: #8ebae9;
 }
 
 .class_menu_container svg {
