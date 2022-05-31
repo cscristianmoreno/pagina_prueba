@@ -1,28 +1,31 @@
 {
   "files": {
-    "main.css": "/pagina_prueba/static/css/main.cf384c66.css",
-    "main.js": "/pagina_prueba/static/js/main.1ef3852b.js",
-    "static/media/imagen_3.jpg": "/pagina_prueba/static/media/imagen_3.f8a1f3c93e5d7c831c87.jpg",
-    "static/media/imagen_2.jpg": "/pagina_prueba/static/media/imagen_2.23ee5b1b089dadacaf1a.jpg",
-    "static/media/imagen_1.jpg": "/pagina_prueba/static/media/imagen_1.f2af7d0978db4b7e72ed.jpg",
-    "static/media/user_4.jpg": "/pagina_prueba/static/media/user_4.c356459e8673ee96091f.jpg",
-    "static/media/user_3.jpg": "/pagina_prueba/static/media/user_3.fb2e33b85cab347fac68.jpg",
-    "static/media/user_1.jpg": "/pagina_prueba/static/media/user_1.e8491dda09fa1d0ee23f.jpg",
-    "static/media/imagen_4.jpg": "/pagina_prueba/static/media/imagen_4.afd0ceb820742609b7f2.jpg",
-    "static/media/imagen_5.jpg": "/pagina_prueba/static/media/imagen_5.642117f3747149f7e7b7.jpg",
-    "static/media/user_2.jpg": "/pagina_prueba/static/media/user_2.27361d435848be15b1fb.jpg",
-    "static/media/image.jpg": "/pagina_prueba/static/media/image.1a3a2c1ed7e23f094697.jpg",
-    "static/media/imagen_8.jpg": "/pagina_prueba/static/media/imagen_8.7769308e18c79f0f6378.jpg",
-    "static/media/imagen_6.jpg": "/pagina_prueba/static/media/imagen_6.e593a2fbb55811377a89.jpg",
-    "static/media/imagen_7.jpg": "/pagina_prueba/static/media/imagen_7.e4a2661819e2a3737c27.jpg",
-    "static/media/image_camera.jpg": "/pagina_prueba/static/media/image_camera.75fd6fde440f04038aa8.jpg",
-    "static/media/fundacion.jpg": "/pagina_prueba/static/media/fundacion.371ffd154a7f07246e56.jpg",
-    "index.html": "/pagina_prueba/index.html",
-    "main.cf384c66.css.map": "/pagina_prueba/static/css/main.cf384c66.css.map",
-    "main.1ef3852b.js.map": "/pagina_prueba/static/js/main.1ef3852b.js.map"
+    "main.css": "/static/css/main.b720d1e9.css",
+    "main.js": "/static/js/main.ef8651fe.js",
+    "static/media/imagen_3.jpg": "/static/media/imagen_3.f8a1f3c93e5d7c831c87.jpg",
+    "static/media/tartamudez.jpg": "/static/media/tartamudez.6e39fc48f92475220ecd.jpg",
+    "static/media/imagen_2.jpg": "/static/media/imagen_2.23ee5b1b089dadacaf1a.jpg",
+    "static/media/imagen_1.jpg": "/static/media/imagen_1.f2af7d0978db4b7e72ed.jpg",
+    "static/media/user_4.jpg": "/static/media/user_4.c356459e8673ee96091f.jpg",
+    "static/media/user_3.jpg": "/static/media/user_3.fb2e33b85cab347fac68.jpg",
+    "static/media/user_1.jpg": "/static/media/user_1.e8491dda09fa1d0ee23f.jpg",
+    "static/media/imagen_4.jpg": "/static/media/imagen_4.afd0ceb820742609b7f2.jpg",
+    "static/media/imagen_5.jpg": "/static/media/imagen_5.642117f3747149f7e7b7.jpg",
+    "static/media/user_2.jpg": "/static/media/user_2.27361d435848be15b1fb.jpg",
+    "static/media/image.jpg": "/static/media/image.1a3a2c1ed7e23f094697.jpg",
+    "static/media/imagen_8.jpg": "/static/media/imagen_8.7769308e18c79f0f6378.jpg",
+    "static/media/imagen_6.jpg": "/static/media/imagen_6.e593a2fbb55811377a89.jpg",
+    "static/media/imagen_7.jpg": "/static/media/imagen_7.e4a2661819e2a3737c27.jpg",
+    "static/media/image_camera.jpg": "/static/media/image_camera.75fd6fde440f04038aa8.jpg",
+    "static/media/hope.jpg": "/static/media/hope.416abd12cb1ec4ebe491.jpg",
+    "static/media/fundacion.jpg": "/static/media/fundacion.371ffd154a7f07246e56.jpg",
+    "static/media/tartamudez_3.jpg": "/static/media/tartamudez_3.511eb1a2010041b93011.jpg",
+    "index.html": "/index.html",
+    "main.b720d1e9.css.map": "/static/css/main.b720d1e9.css.map",
+    "main.ef8651fe.js.map": "/static/js/main.ef8651fe.js.map"
   },
   "entrypoints": [
-    "static/css/main.cf384c66.css",
-    "static/js/main.1ef3852b.js"
+    "static/css/main.b720d1e9.css",
+    "static/js/main.ef8651fe.js"
   ]
 }
