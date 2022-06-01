@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/pagina_prueba/static/css/main.b720d1e9.css",
-    "main.js": "/pagina_prueba/static/js/main.7d3064b9.js",
+    "main.css": "/pagina_prueba/static/css/main.5db3b184.css",
+    "main.js": "/pagina_prueba/static/js/main.3034b689.js",
     "static/media/imagen_3.jpg": "/pagina_prueba/static/media/imagen_3.f8a1f3c93e5d7c831c87.jpg",
     "static/media/tartamudez.jpg": "/pagina_prueba/static/media/tartamudez.6e39fc48f92475220ecd.jpg",
     "static/media/imagen_2.jpg": "/pagina_prueba/static/media/imagen_2.23ee5b1b089dadacaf1a.jpg",
@@ -21,11 +21,11 @@
     "static/media/fundacion.jpg": "/pagina_prueba/static/media/fundacion.371ffd154a7f07246e56.jpg",
     "static/media/tartamudez_3.jpg": "/pagina_prueba/static/media/tartamudez_3.511eb1a2010041b93011.jpg",
     "index.html": "/pagina_prueba/index.html",
-    "main.b720d1e9.css.map": "/pagina_prueba/static/css/main.b720d1e9.css.map",
-    "main.7d3064b9.js.map": "/pagina_prueba/static/js/main.7d3064b9.js.map"
+    "main.5db3b184.css.map": "/pagina_prueba/static/css/main.5db3b184.css.map",
+    "main.3034b689.js.map": "/pagina_prueba/static/js/main.3034b689.js.map"
   },
   "entrypoints": [
-    "static/css/main.b720d1e9.css",
-    "static/js/main.7d3064b9.js"
+    "static/css/main.5db3b184.css",
+    "static/js/main.3034b689.js"
   ]
 }
