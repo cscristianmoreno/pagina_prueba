@@ -9,10 +9,18 @@ import image_5 from "./images/gallery/imagen_5.jpg";
 import image_6 from "./images/gallery/imagen_6.jpg";
 import image_7 from "./images/gallery/imagen_7.jpg";
 import image_8 from "./images/gallery/imagen_8.jpg";
+import { useInView } from "react-intersection-observer";
 
 const Gallery = () => {
+
+    const [ref, inView] = useInView({
+        delay: 1000,
+        triggerOnce: true
+    });
+
+
     return(
-        <div className="class_gallery_container">
+        <div ref={ref} className={"class_gallery_container class_effect_opacity" + ((inView) ? " class_effect_display" : "")}>
             <span className="class_container_title">Acerca de la fundación</span>
 
             <div className="class_line_separated"/>

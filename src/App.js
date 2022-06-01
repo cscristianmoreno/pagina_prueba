@@ -18,8 +18,8 @@ const App = () => {
     return(
         <HashRouter>
             <Routes>
-                <Route path="/" element={<Home/>}/>
-                <Route path="acerca_de_la_tartamudez" element={<Stuttering/>}/>
+                    <Route path="/" element={<Home/>}/>
+                    <Route path="acerca_de_la_tartamudez" element={<Stuttering/>}/>
             </Routes>
         </HashRouter>
     );
@@ -28,15 +28,15 @@ const App = () => {
 const Home = () => {
     return(
         <>
-            <Menu/>
-            <Carousel/>
-            <Services/>
-            <Gallery/>
-            <Objectives/>
-            <Members/>
-            <Suscribe/>
-            {/* <Announcement/> */}
-            <Footer/>
+                <Menu/>
+                <Carousel/>
+                <Services/>
+                <Gallery/>
+                <Objectives/>
+                <Members/>
+                <Suscribe/>
+                {/* <Announcement/> */}
+                <Footer/>
         </>
     )
 }

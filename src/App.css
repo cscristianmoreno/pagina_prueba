@@ -47,5 +47,11 @@
     box-shadow: 5px 5px 1px rgb(0 0 0 / 5%);
 }
 
-.class_container_title i {
+.class_effect_display {
+    opacity: 1 !important;
+    transition: 2s;
+}
+
+.class_effect_opacity {
+    opacity: 0;
 }

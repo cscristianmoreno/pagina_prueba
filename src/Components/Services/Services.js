@@ -4,10 +4,20 @@ import Mente from "./images/Mente.js";
 import Help from "./images/Help.js";
 import Hands from "./images/Hands.js";
 
+import { useInView } from "react-intersection-observer";
+import { useRef, useCallback, useEffect } from "react";
+
 const Services = () => {
+
+    const { ref, inView, entry } = useInView({
+        delay: 1000,
+        triggerOnce: true
+    })
+
     return(
-        <div className="class_services_container">
-            <div className="class_services_triangle" />
+        <div ref={ref} className={"class_services_container class_effect_opacity" + ((inView) ? " class_effect_display" : "")}>
+            {/* <div className="class_services_triangle"/> */}
+            
             <span className="class_container_title">¿Quiénes somos?</span>
 
             <div className="class_line_separated" />

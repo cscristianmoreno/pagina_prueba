@@ -1,11 +1,18 @@
 import { useRef } from "react";
 
+import { useInView } from "react-intersection-observer";
+
 import "./Stammering.css";
 import Stuttering from "./images/tartamudez.jpg";
 import Stuttering2 from "./images/tartamudez_2.jpg";
 import Stuttering3 from "./images/tartamudez_3.jpg";
 
 const Stammering = () => {
+    const [ref, inView] = useInView({
+        delay: 1000,
+        triggerOnce: true
+    });
+
     const stutteringRef = useRef();
     const reasonTextRef = useRef();
     const reasonTypesRef = useRef();
@@ -27,7 +34,7 @@ const Stammering = () => {
     }
 
     return(
-        <div className="class_stammering_container">
+        <div ref={ref} className={"class_stammering_container class_effect_opacity" + ((inView) ? " class_effect_display" : "")}>
             <span className="class_container_title">Acerca de la tartamudez</span>
 
             <div className="class_line_separated"/>

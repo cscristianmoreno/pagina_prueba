@@ -13,9 +13,16 @@ import Resources from "./images/Resources.js";
 import Incorporation from "./images/Incorporation.js";
 import Bus from "./images/Bus.js";
 
+import { useInView } from "react-intersection-observer";
+
 const Objectives = () => {
+    const [ref, inView] = useInView({
+        delay: 1000,
+        triggerOnce: true
+    });
+
     return (
-        <div className="class_objectives_container">
+        <div ref={ref} className={"class_objectives_container class_effect_opacity" + ((inView) ? " class_effect_display" : "")}>
             <span className="class_container_title">Objetivos</span>
 
             <div className="class_line_separated"/>

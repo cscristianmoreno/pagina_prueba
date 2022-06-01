@@ -4,9 +4,17 @@ import user_2 from "./images/user_2.jpg";
 import user_3 from "./images/user_3.jpg";
 import user_4 from "./images/user_4.jpg";
 
+import { useInView } from "react-intersection-observer";
+
 const Members = () => {
+
+    const [ref, inView] = useInView({
+        delay: 1000,
+        triggerOnce: true
+    });
+
     return(
-        <div className="class_members_container">
+        <div ref={ref} className={"class_members_container class_effect_opacity" + ((inView) ? " class_effect_display" : "")}>
             <span className="class_members_title"><i className="fas fa-users"/>&nbsp;&nbsp;Fundadores</span>
 
             <div className="class_members_image_container">

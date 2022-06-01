@@ -1,8 +1,14 @@
 import "./Suscribe.css";
+import { useInView } from "react-intersection-observer";
 
 const Suscribe = () => {
+    const [ref, inView] = useInView({
+        delay: 1000,
+        triggerOnce: true
+    });
+
     return(
-        <div className="class_suscribe_container">
+        <div ref={ref} className={"class_suscribe_container class_effect_opacity" + ((inView) ? " class_effect_display" : "")}>
             <span className="class_suscribe_title">Suscríbete y recibe todas las novedades acerca de la Fundación Salteña de Tartamudez</span>
 
             <br/>
