@@ -1,4 +1,4 @@
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import "./App.css";
 import Menu from "./Components/Menu/Menu.js";
@@ -12,20 +12,21 @@ import Members from "./Components/Members/Members.js";
 import Announcement from "./Components/Announcement/Announcement.js";
 import Suscribe from "./Components/Suscribe/Suscribe.js";
 import Stammering from "./Components/Information/Stammering.js";
-
+import Organizations from "./Components/Organizations/Organizations.js";
 
 const App = () => {
     return(
-        <HashRouter>
+        <BrowserRouter>
             <Routes>
-                    <Route path="/" element={<Home/>}/>
-                    <Route path="acerca_de_la_tartamudez" element={<Stuttering/>}/>
+                    <Route path="/" element={<LinkHome/>}/>
+                    <Route path="acerca_de_la_tartamudez" element={<LinkStuttering/>}/>
+                    <Route path="organizaciones" element={<LinkOrganizations/>}/>
             </Routes>
-        </HashRouter>
+        </BrowserRouter>
     );
 }
 
-const Home = () => {
+const LinkHome = () => {
     return(
         <>
                 <Menu/>
@@ -41,11 +42,21 @@ const Home = () => {
     )
 }
 
-const Stuttering = () => {
+const LinkStuttering = () => {
     return (
         <>
             <Menu/>
             <Stammering/>
+            <Footer/>
+        </>
+    )
+}
+
+const LinkOrganizations = () => {
+    return(
+        <>
+            <Menu/>
+            <Organizations/>
             <Footer/>
         </>
     )

@@ -1,23 +1,20 @@
 import "./Footer.css";
 // import Logo from "../Menu/images/fundacion.jpg";
 
-import Hope from "./images/hope.jpg";
-import Pandis from "./images/pandis.jpg";
-
 const Footer = () => {
     return(
         <div className="class_footer_container">
 
             <div className="class_footer_icon_container">
-                <span className="class_footer_icon_title">Fundación Salteña de Tartamudez</span>
+                <span className="class_footer_title">Fundación Salteña de Tartamudez</span>
 
                 <br/>
                 <br/>
-                <span className="class_footer_icon_subtitle">Buscamos concientizar acerca de la tartamudez y su impacto en la vida de las personas</span>
+                <span className="class_footer_subtitle">Buscamos concientizar acerca de la tartamudez y su impacto en la vida de las personas</span>
                 
                 <br/>
                 <br/>
-                <span className="class_footer_icon_subtitle">Conocé más acerca de la tartamudez en nuestras redes sociales</span>
+                <span className="class_footer_subtitle">Conocé más acerca de la tartamudez en nuestras redes sociales</span>
                 
 
                 <div className="class_footer_icon">
@@ -36,7 +33,7 @@ const Footer = () => {
             </div>
 
             <div className="class_footer_caracteristics">
-                <span className="class_footer_caracteristics_title">Objetivos claves</span>
+                <span className="class_footer_title">Objetivos claves</span>
 
                 <ul>
                     <li><i className="fas fa-angle-double-right"/>&nbsp;&nbsp;Detectar la tartamudez</li>
@@ -47,20 +44,16 @@ const Footer = () => {
             </div>
 
             <div className="class_footer_caracteristics">
-                <span className="class_footer_caracteristics_title">Organizaciones aliadas</span>
+                
+                <span className="class_footer_title">Acerca de</span>
                 <br/>
                 <br/>
-                <div className="class_footer_image_container">
-                    <div className="class_footer_image">
-                        <img src={Hope}/>
-                        <span className="class_footer_image_title">H.O.P.E</span>
-                    </div>
 
-                    <div className="class_footer_image">
-                        <img src={Pandis}/>
-                        <span className="class_footer_image_title">Grupo Pandis</span>
-                    </div>
-                </div>
+                <span style={{fontStyle: "italic"}} className="class_footer_reserved_title">© 2022 Fundación Salteña de Tartamudez.</span>
+                <br/>
+                <span className="class_footer_reserved_title">Todos los derechos reservados.</span>
+                <br/>
+                <span className="class_footer_reserved_title">Diseño y desarrollo: <a href="https://www.linkedin.com/in/cristian-moreno-797b1b218/" target="_blank">Cristian Moreno</a></span>
             </div>
         </div>
     )

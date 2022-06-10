@@ -45,13 +45,14 @@
     border-color: #e0e0e0;
     padding: 25px;
     box-shadow: 5px 5px 1px rgb(0 0 0 / 5%);
+    margin-top: 30px;
 }
 
 .class_effect_display {
     opacity: 1 !important;
-    transition: 2s;
+    transition: 1.5s;
 }
 
 .class_effect_opacity {
-    opacity: 0;
+    opacity: 0.25;
 }

@@ -14,7 +14,7 @@ import { useInView } from "react-intersection-observer";
 const Gallery = () => {
 
     const [ref, inView] = useInView({
-        delay: 1000,
+        delay: 500,
         triggerOnce: true
     });
 
@@ -24,9 +24,6 @@ const Gallery = () => {
             <span className="class_container_title">Acerca de la fundación</span>
 
             <div className="class_line_separated"/>
-
-            <br/>
-            <br/>
 
             <span className="class_container_subtitle">Informamos a la sociedad sobre Tartamudez y sus características reales, capacitamos a profesionales fonoaudiólogos en detección y tratamiento con bases científicas; brindamos orientación a psicólogos, psicopedagogos, médicos y demás personal del área de  Salud y Educación, en la  detección,  entendimiento y contención adecuada; brindamos asesoramiento a las personas que tartamudean y a sus familias; y trabajamos para brindar acceso a herramientas que aumenten la confianza, autoestima, perdiendo el miedo, la vergüenza, inseguridad y el estigma de expresarse, iniciando un camino de aceptación.</span>
 

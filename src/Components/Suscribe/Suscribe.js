@@ -1,11 +1,20 @@
+import { useEffect, useState } from "react";
+
 import "./Suscribe.css";
 import { useInView } from "react-intersection-observer";
 
 const Suscribe = () => {
+
+    const [email, setEmail] = useState("");
+
     const [ref, inView] = useInView({
-        delay: 1000,
+        delay: 500,
         triggerOnce: true
     });
+
+    const handleInputControl = (event) => {
+        setEmail(event.target.value);
+    }
 
     return(
         <div ref={ref} className={"class_suscribe_container class_effect_opacity" + ((inView) ? " class_effect_display" : "")}>
@@ -13,11 +22,11 @@ const Suscribe = () => {
 
             <br/>
 
-            <div className="class_suscribe_form">
+            <form className="class_suscribe_form">
                 <span className="input-group-text" id="basic-addon1"><i className="fas fa-paper-plane"/></span>
-                <input type="text" className="form-control" placeholder="Correo electrónico..." aria-label="Username" aria-describedby="basic-addon1"/>
-                <button className="btn btn-primary">Suscribirme</button>
-            </div>
+                <input onChange={handleInputControl} type="text" className="form-control" placeholder="Correo electrónico..." aria-label="Username" aria-describedby="basic-addon1"/>
+                <button type="submit" className="btn btn-primary">Suscribirme</button>
+            </form>
         </div>
     )
 }

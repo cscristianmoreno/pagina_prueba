@@ -9,7 +9,7 @@ import { useInView } from "react-intersection-observer";
 const Members = () => {
 
     const [ref, inView] = useInView({
-        delay: 1000,
+        delay: 500,
         triggerOnce: true
     });
 

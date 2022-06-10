@@ -1,0 +1,53 @@
+.class_organizations_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.class_organizations_image_container {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin-top: 25px;
+}
+
+.class_organizations_image_container img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 50%);
+    /* filter: brightness(25%); */
+}
+
+.class_organizations_image {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Roboto", sans-serif;
+}
+
+.class_organizations_image_title {
+    color: orange;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.class_organizations_image_description {
+    color: gray;
+}
+
+.class_organizations_link_container {
+    margin-top: 5px;
+    color: #616dd8;
+    transition: 0.25s;
+}
+
+.class_organizations_image a {
+    text-decoration: none;
+    color: #616dd8;
+}
+
+.class_organizations_link_container:hover {
+    color: #9da5eb;
+}

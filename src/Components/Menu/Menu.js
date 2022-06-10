@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useState, useRef } from "react";
 import MenuDefault from "./MenuDefault";
 import "./Menu.css";
 import Feather from "./images/Feather.js";
@@ -7,16 +7,33 @@ import Fundacion from "./images/fundacion.jpg";
 import { useMediaQuery } from "react-responsive";
 import { NavLink } from "react-router-dom";
 
+const menuItems = [
+    { icon: "fas fa-comment", item: "SU HISTORIA", link: "historia_de_la_tartamudez" },
+    { icon: "fas fa-user-friends", item: "GRUPOS", link: "grupos_de_ayuda_mutua" },
+    { icon: "fas fa-book", item: "ACTIVIDADES", link: "actividades" },
+    { icon: "fas fa-book", item: "PREGUNTAS", link: "actividades" },
+    { icon: "fas fa-book", item: "FORMACIÓN", link: "actividades" },
+    { icon: "fas fa-book", item: "DESCRUBIENDO", link: "actividades" }
+];
+
 const Menu = () => {
+
+    const [openMenu, setOpenMenu] = useState(0);
 
     const responsive = useMediaQuery({
         query: "(max-width: 988px)"
     });
 
     const menuResponsive = useRef();
+    const subMenuRef = useRef();
 
     const handleOpenMenu = () => {
         menuResponsive.current.classList.toggle("class_menu_responsive_display");
+    }
+
+    const handleOpenSubMenu = () => {
+        subMenuRef.current.classList.toggle("class_menu_submenu_display");
+        setOpenMenu(!(openMenu));
     }
 
     if (responsive) {
@@ -40,7 +57,11 @@ const Menu = () => {
                     <li>
                         <NavLink to="/acerca_de_la_tartamudez" style={({isActive}) => isActive ? {color: "#007bff"} : undefined}>Acerca de la tartamudez</NavLink>
                     </li>
-                    <li>Organización</li>
+                    <li>
+                        <NavLink to="/organizaciones" className={({isActive}) => (isActive) ? "class_menu_items_selected" : undefined}>
+                            Organizaciones
+                        </NavLink>
+                    </li>
                 </ul>
             </div>
         </>
@@ -62,12 +83,27 @@ const Menu = () => {
 
                 <ul className="class_menu_items">
                     <li>
-                        <NavLink to="/" style={({isActive}) => isActive ? {color: "#007bff"} : undefined}>Inicio</NavLink>
+                        <NavLink to="/" className={({isActive}) => (isActive) ? "class_menu_items_selected" : undefined}>Inicio</NavLink>
+                    </li>
+                    <li onClick={() => handleOpenSubMenu()} style={{position: "relative"}}>
+                        <span>Acerca de la tartamudez&nbsp;&nbsp;<i className={(openMenu) ? "fas fa-angle-up" :"fas fa-angle-down"}/></span>
+                        <ul ref={subMenuRef} className="class_menu_submenu_container">
+                        {
+                            menuItems.map((str, num) => {
+                                return(
+                                    <li key={num}>
+                                       <NavLink to={str.link} className={({isActive}) => (isActive) ? "class_menu_item_selected" : ""}><i className={str.icon}/>&nbsp;&nbsp;&nbsp;{str.item}</NavLink>
+                                    </li>
+                                )
+                            })
+                        }
+                        </ul>
                     </li>
                     <li>
-                        <NavLink to="/acerca_de_la_tartamudez" style={({isActive}) => isActive ? {color: "#007bff"} : undefined}>Acerca de la tartamudez</NavLink>
+                        <NavLink to="/organizaciones" className={({isActive}) => (isActive) ? "class_menu_items_selected" : undefined}>
+                            Organizaciones
+                        </NavLink>
                     </li>
-                    <li>Organización</li>
                 </ul>
             </div>
         </>

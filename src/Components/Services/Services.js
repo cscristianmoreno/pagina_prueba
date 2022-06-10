@@ -10,7 +10,7 @@ import { useRef, useCallback, useEffect } from "react";
 const Services = () => {
 
     const { ref, inView, entry } = useInView({
-        delay: 1000,
+        delay: 500,
         triggerOnce: true
     })
 
@@ -21,8 +21,7 @@ const Services = () => {
             <span className="class_container_title">¿Quiénes somos?</span>
 
             <div className="class_line_separated" />
-
-            <br/>
+            
             <span className="class_container_subtitle">Somos una entidad sin fines de lucro nacida de una realidad frecuentemente ignorada y desestimada. Somos personas con Tartamudez, Padres y Fonoaudiólogos de la Provincia de Salta, Argentina, que buscan visibilizar la Tartamudez y dar voz a las personas que viven con ella día a día.</span>
 
             <br/>

@@ -1,22 +1,24 @@
 .class_footer_container {
     display: flex;
     justify-content: space-around;
+    width: 100%;
     background-color: rgb(30, 30, 30);
     width: 100%;
     font-family: "Monserrat", sans-serif;
+}
+
+.class_footer_title {
+    color: white;
+    font-size: 15px;
     font-weight: bolder;
 }
 
-.class_footer_icon_title {
-    color: white;
-    font-size: 18px;
-}
-
-.class_footer_icon_subtitle {
-    color: rgb(200, 200, 200);
+.class_footer_subtitle {
+    color: gray;
     font-weight: 500;
     /* font-style: italic; */
-    font-size: 14px;
+    font-size: 13px;
+    font-family: "Roboto", sans-serif;
     /* max-width: 250px; */
 }
 
@@ -39,7 +41,7 @@
 
 .class_footer_icon i {
     color: rgb(216, 215, 215);
-    font-size: 20px;
+    font-size: 18px;
     margin-top: 10px;
     /* color: white; */
 }
@@ -51,23 +53,18 @@
     /* margin-left: 50px; */
 }
 
-.class_footer_caracteristics_title {
-    color: white;
-    font-size: 20px;
-}
-
 .class_footer_caracteristics ul {
     color: white;
     margin-top: 40px;
     list-style: none;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 13px;
     padding: 0px;
 }
 
 .class_footer_caracteristics ul li {
     margin-top: 10px;
-    font-family: sans-serif;
+    font-family: "Roboto", sans-serif;
     padding: 0px;
     color: gray;
 }
@@ -77,29 +74,24 @@
     border-color: gray !important;
 }
 
-.class_footer_image_container {
-    display: flex;
-    justify-content: space-between;
-}
-
-.class_footer_image_container img {
-    width: 65px;
-    height: 65px;
-    border-radius: 100%;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 25%);
-    /* filter: brightness(25%); */
-}
-
-.class_footer_image {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-.class_footer_image_title {
-    color: orange;
+.class_footer_reserved_title {
+    color: gray;
     font-family: "Roboto", sans-serif;
-    margin-top: 10px;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 500;
+}
+
+.class_footer_reserved_title a {
+    text-decoration: none;
+    color: orange;
+    transition: 0.25s;
+}
+
+.class_footer_reserved_title a:hover {
+    color: yellow;
+}
+
+.class_footer_developer {
+    display: flex;
+    flex-direction: column;
 }
