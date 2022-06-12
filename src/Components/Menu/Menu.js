@@ -10,10 +10,10 @@ import { NavLink } from "react-router-dom";
 const menuItems = [
     { icon: "fas fa-comment", item: "SU HISTORIA", link: "historia_de_la_tartamudez" },
     { icon: "fas fa-user-friends", item: "G.A.M & G.A.P", link: "grupos_de_ayuda_mutua" },
-    { icon: "fas fa-book", item: "ACTIVIDADES", link: "actividades" },
-    { icon: "fas fa-book", item: "PREGUNTAS", link: "actividades" },
-    { icon: "fas fa-book", item: "FORMACIÓN", link: "actividades" },
-    { icon: "fas fa-book", item: "DESCRUBIENDO", link: "actividades" }
+    // { icon: "fas fa-book", item: "ACTIVIDADES", link: "actividades" },
+    // { icon: "fas fa-book", item: "PREGUNTAS", link: "actividades" },
+    // { icon: "fas fa-book", item: "FORMACIÓN", link: "actividades" },
+    // { icon: "fas fa-book", item: "DESCRUBIENDO", link: "actividades" }
 ];
 
 const Menu = () => {
