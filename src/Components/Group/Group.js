@@ -73,7 +73,7 @@ const Group = () => {
 
                 <ul className="class_stammering_information_types">
                     <li><i className="fas fa-circle"/>&nbsp;&nbsp;<span className="class_stammering_list">Grupo de ayuda mutua (G.A.M)</span>: El grupo de ayuda mutua está conformado por persona que sufren de tartamudez, el objetivo de este grupo es entender y brindar contención a las mismas, ofreciéndoles un espacio de reunión donde se puede abordar este tema más ampliamente.</li>
-                    <li><i className="fas fa-circle"/>&nbsp;&nbsp;<span className="class_stammering_list">Grupo de ayuda para padres (G.A.P)</span>: El grupo de ayuda para padres es un espacio derivado a los mismos para informar y brindar herramientas de como llevar a cabo esta problemática sobre sus hijos, dándoles consejos y brindándoles apoyo en todo momento.</li>
+                    <li><i className="fas fa-circle"/>&nbsp;&nbsp;<span className="class_stammering_list">Grupo de ayuda para padres (G.A.P)</span>: El grupo de ayuda para padres es un espacio derivado a los mismos para informar y brindar herramientas de como llevar a cabo esta situación sobre sus hijos, dándoles consejos y brindándoles apoyo en todo momento.</li>
                 </ul>
                 
             </div>
