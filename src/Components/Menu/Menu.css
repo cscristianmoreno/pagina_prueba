@@ -121,3 +121,12 @@
 .class_menu_submenu_display {
     display: flex;
 }
+
+.class_menu_icon {
+    transition: 0.5s;
+    transform: rotate(0deg);
+}
+
+.class_menu_icon_rotate {
+    transform: rotate(180deg);
+}

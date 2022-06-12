@@ -28,10 +28,12 @@ const Menu = () => {
     const subMenuRef = useRef();
 
     const handleOpenMenu = () => {
+        
         menuResponsive.current.classList.toggle("class_menu_responsive_display");
     }
 
-    const handleOpenSubMenu = () => {
+    const handleOpenSubMenu = (e) => {
+        e.currentTarget.classList.toggle("class_menu_items_selected");
         subMenuRef.current.classList.toggle("class_menu_submenu_display");
         setOpenMenu(!(openMenu));
     }
@@ -56,8 +58,8 @@ const Menu = () => {
                     <li>
                         <NavLink to="/" className={({isActive}) => (isActive) ? "class_menu_items_selected" : undefined}>Inicio</NavLink>
                     </li>
-                    <li onClick={() => handleOpenSubMenu()} style={{position: "relative"}}>
-                        <span>Acerca de la tartamudez&nbsp;&nbsp;<i className={(openMenu) ? "fas fa-angle-up" :"fas fa-angle-down"}/></span>
+                    <li onClick={(e) => handleOpenSubMenu(e)} style={{position: "relative"}}>
+                    <span>Acerca de la tartamudez&nbsp;&nbsp;<i className={(openMenu) ? "fas fa-angle-down class_menu_icon class_menu_icon_rotate" :"fas fa-angle-down class_menu_icon"}/></span>
                         <ul ref={subMenuRef} className="class_menu_submenu_container">
                         {
                             menuItems.map((str, num) => {
@@ -97,8 +99,8 @@ const Menu = () => {
                     <li>
                         <NavLink to="/" className={({isActive}) => (isActive) ? "class_menu_items_selected" : undefined}>Inicio</NavLink>
                     </li>
-                    <li onClick={() => handleOpenSubMenu()} style={{position: "relative"}}>
-                        <span>Acerca de la tartamudez&nbsp;&nbsp;<i className={(openMenu) ? "fas fa-angle-up" :"fas fa-angle-down"}/></span>
+                    <li onClick={(e) => handleOpenSubMenu(e)} style={{position: "relative"}}>
+                        <span>Acerca de la tartamudez&nbsp;&nbsp;<i className={(openMenu) ? "fas fa-angle-down class_menu_icon class_menu_icon_rotate" :"fas fa-angle-down class_menu_icon"}/></span>
                         <ul ref={subMenuRef} className="class_menu_submenu_container">
                         {
                             menuItems.map((str, num) => {
