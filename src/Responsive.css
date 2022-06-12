@@ -141,6 +141,13 @@
     .class_footer_icon {
         width: 150px !important;
     }
+
+    .class_menu_submenu_container {
+        position: unset !important;
+        box-shadow: unset !important;
+        border: unset !important;
+        padding: unset !important;
+    }
 }
 
 /* Galaxy Fold */

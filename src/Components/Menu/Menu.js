@@ -9,7 +9,7 @@ import { NavLink } from "react-router-dom";
 
 const menuItems = [
     { icon: "fas fa-comment", item: "SU HISTORIA", link: "historia_de_la_tartamudez" },
-    { icon: "fas fa-user-friends", item: "GRUPOS", link: "grupos_de_ayuda_mutua" },
+    { icon: "fas fa-user-friends", item: "G.A.M & G.A.P", link: "grupos_de_ayuda_mutua" },
     { icon: "fas fa-book", item: "ACTIVIDADES", link: "actividades" },
     { icon: "fas fa-book", item: "PREGUNTAS", link: "actividades" },
     { icon: "fas fa-book", item: "FORMACIÓN", link: "actividades" },
@@ -42,7 +42,9 @@ const Menu = () => {
             <MenuDefault/>
 
             <div className="class_menu_container">
-                <img src={Fundacion}/>
+                <NavLink to="/">   
+                    <img src={Fundacion}/>
+                </NavLink>
 
                 <i onClick={() => handleOpenMenu()} className="fas fa-bars"/>
             </div>
@@ -54,8 +56,19 @@ const Menu = () => {
                     <li>
                         <NavLink to="/" style={({isActive}) => isActive ? {color: "#007bff"} : undefined}>Inicio</NavLink>
                     </li>
-                    <li>
-                        <NavLink to="/acerca_de_la_tartamudez" style={({isActive}) => isActive ? {color: "#007bff"} : undefined}>Acerca de la tartamudez</NavLink>
+                    <li onClick={() => handleOpenSubMenu()} style={{position: "relative"}}>
+                        <span>Acerca de la tartamudez&nbsp;&nbsp;<i className={(openMenu) ? "fas fa-angle-up" :"fas fa-angle-down"}/></span>
+                        <ul ref={subMenuRef} className="class_menu_submenu_container">
+                        {
+                            menuItems.map((str, num) => {
+                                return(
+                                    <li key={num}>
+                                       <NavLink to={"/" + str.link} className={({isActive}) => (isActive) ? "class_menu_item_selected" : ""}><i className={str.icon}/>&nbsp;&nbsp;&nbsp;{str.item}</NavLink>
+                                    </li>
+                                )
+                            })
+                        }
+                        </ul>
                     </li>
                     <li>
                         <NavLink to="/organizaciones" className={({isActive}) => (isActive) ? "class_menu_items_selected" : undefined}>
@@ -75,11 +88,10 @@ const Menu = () => {
             <MenuDefault/>
 
             <div className="class_menu_container">
-                <div>
-                    {/* <Feather/> */}
+                <NavLink to="/">   
                     <img src={Fundacion}/>
                     <span className="class_menu_title">Fluyendo desde el alma</span>
-                </div>
+                </NavLink>
 
                 <ul className="class_menu_items">
                     <li>
@@ -92,7 +104,7 @@ const Menu = () => {
                             menuItems.map((str, num) => {
                                 return(
                                     <li key={num}>
-                                       <NavLink to={str.link} className={({isActive}) => (isActive) ? "class_menu_item_selected" : ""}><i className={str.icon}/>&nbsp;&nbsp;&nbsp;{str.item}</NavLink>
+                                       <NavLink to={"/" + str.link} className={({isActive}) => (isActive) ? "class_menu_item_selected" : ""}><i className={str.icon}/>&nbsp;&nbsp;&nbsp;{str.item}</NavLink>
                                     </li>
                                 )
                             })

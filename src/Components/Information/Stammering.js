@@ -35,14 +35,14 @@ const Stammering = () => {
 
     return(
         <div ref={ref} className={"class_stammering_container class_effect_opacity" + ((inView) ? " class_effect_display" : "")}>
-            <span className="class_container_title">Acerca de la tartamudez</span>
+            <span className="class_container_title">Historia de la tartamudez</span>
 
             <div className="class_line_separated"/>
         
             <div className="class_stammering_image_container">
                 <img className="class_stammering_image class_stammering_image_main" src={Stuttering2}/>
-                <img className="class_stammering_image class_stammering_image_absolute class_stammering_image_position_1" src={Stuttering}/>
-                <img className="class_stammering_image class_stammering_image_absolute class_stammering_image_position_2" src={Stuttering3}/>
+                <img style={{marginLeft: "75%", marginTop: "-0%"}} className="class_stammering_image class_stammering_image_absolute class_stammering_image_position_1" src={Stuttering}/>
+                <img style={{marginRight: "75%", marginTop: "60%"}} className="class_stammering_image class_stammering_image_absolute class_stammering_image_position_2" src={Stuttering3}/>
             </div>
             
             <div onClick={() => handleOpenStutteringRef()} className="class_stammering_information_title_container">

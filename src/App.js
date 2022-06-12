@@ -13,14 +13,17 @@ import Announcement from "./Components/Announcement/Announcement.js";
 import Suscribe from "./Components/Suscribe/Suscribe.js";
 import Stammering from "./Components/Information/Stammering.js";
 import Organizations from "./Components/Organizations/Organizations.js";
+import Group from "./Components/Group/Group.js";
 
 const App = () => {
     return(
         <BrowserRouter>
             <Routes>
                     <Route path="/" element={<LinkHome/>}/>
-                    <Route path="acerca_de_la_tartamudez" element={<LinkStuttering/>}/>
+                    <Route path="historia_de_la_tartamudez" element={<LinkStuttering/>}/>
                     <Route path="organizaciones" element={<LinkOrganizations/>}/>
+                    <Route path="grupos_de_ayuda_mutua" element={<LinkGroups/>}/>
+                    <Route path="*" element={<h1>Página no encontrada</h1>}/>
             </Routes>
         </BrowserRouter>
     );
@@ -57,6 +60,16 @@ const LinkOrganizations = () => {
         <>
             <Menu/>
             <Organizations/>
+            <Footer/>
+        </>
+    )
+}
+
+const LinkGroups = () => {
+    return(
+        <>
+            <Menu/>
+            <Group/>
             <Footer/>
         </>
     )
