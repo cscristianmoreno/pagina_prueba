@@ -54,7 +54,7 @@ const Menu = () => {
 
                 <ul className="class_menu_responsive_items">
                     <li>
-                        <NavLink to="/" style={({isActive}) => isActive ? {color: "#007bff"} : undefined}>Inicio</NavLink>
+                        <NavLink to="/" className={({isActive}) => (isActive) ? "class_menu_items_selected" : undefined}>Inicio</NavLink>
                     </li>
                     <li onClick={() => handleOpenSubMenu()} style={{position: "relative"}}>
                         <span>Acerca de la tartamudez&nbsp;&nbsp;<i className={(openMenu) ? "fas fa-angle-up" :"fas fa-angle-down"}/></span>

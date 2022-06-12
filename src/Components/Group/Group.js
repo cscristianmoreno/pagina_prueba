@@ -19,10 +19,8 @@ const Group = () => {
 
             <div className="class_line_separated"/>
 
-            <br/>
-
-                <div className="class_stammering_image_container">
-            <img className="class_stammering_image class_stammering_image_main" src={Group1}/>
+            <div className="class_stammering_image_container">
+                <img className="class_stammering_image class_stammering_image_main" src={Group1}/>
                 <img style={{marginLeft: "75%", marginTop: "70%"}} className="class_stammering_image class_stammering_image_absolute class_stammering_image_position_1" src={Group2}/>
                 <img style={{marginRight: "80%", marginTop: "0%"}} className="class_stammering_image class_stammering_image_absolute class_stammering_image_position_2" src={Group3}/>
             </div>
@@ -37,7 +35,7 @@ const Group = () => {
                     <i className="fas fa-angle-down"/>
                 </div>
                 <p className="class_stammering_information_text">
-                    Un grupo de ayuda es un espacio en el cual diversas personas que comparten un mismo problema o dificultad se reúnen para intentar superar o mejorar su situación. Hay muchos tipos de grupos de ayuda, en función del colectivo de personas que decide reunirse.
+                    Un grupo de ayuda es un espacio en el cual diversas personas que comparten una misma situación o dificultad se reúnen para intentar superar o mejorar su situación. Hay muchos tipos de grupos de ayuda, en función del colectivo de personas que decide reunirse.
                 </p>
                 
             </div>
